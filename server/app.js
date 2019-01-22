@@ -53,7 +53,7 @@ app.get('/logout', function(req, res) {
 app.use('/api', api );
 app.use(express.static(publicPath));
 
-const port = (process.env.PORT || 3000);
+const port = (process.env.PORT || 5000);
 http.listen(port, () => {
   console.log(`Listening on port 3000 and looking in folder ${publicPath}`);
 });
